@@ -50,7 +50,7 @@
         <% tel = params['tel'] %>
         <p>電話番号　　　<%= tel %></p>
         <% content = params['content'] %>
-        <p>内容　　　<%= content %></p>
+        <p>内容　　　<%= content.gsub(/\r\n|\r|\n/, "<br>") %></p>
         </section>
         
         <div class="text-center mb-4">
